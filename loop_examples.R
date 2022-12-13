@@ -30,3 +30,13 @@ for (x in dice) {
     print("not yahtzee")
   }
 }
+
+# for loop in a for loop
+adj <- list("red","big","tasty")
+fruits <- list ("apple", "banana", "cherry")
+
+for (x in adj) {
+  for (y in fruits) {
+    print(paste(x,y))
+  }
+}
