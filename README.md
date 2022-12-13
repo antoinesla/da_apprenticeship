@@ -1,3 +1,3 @@
 # Data analysis apprenticeship example files
-Just some example files discussed in class
+Created for data DA apprenticeship level 4
 Notes taken with Obsidian, stored in personal drive
