@@ -15,3 +15,33 @@ my_function <- function(fname) {
 my_function("Peter")
 my_function("Lois")
 my_function("Stewie")
+
+
+# global variable
+txt <- "awesome"
+
+my_function <- function() {
+  paste("R is", txt)
+}
+
+my_function()
+
+
+# global and local variables
+txt <- "awesome"
+
+my_function <- function() {
+  txt <- "fantastic"
+  paste("R is", txt)
+}
+
+my_function()
+
+
+# global variable within a function with operator <<-
+my_function <- function() {
+  txt <<- "fantastic"
+  paste("R is", txt)
+}
+
+my_function()
