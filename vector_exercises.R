@@ -1,3 +1,4 @@
+# VECTOR EXERCISES
 # exercise 1
 x <- c(4,6,5,7,10,9,4,15)
 for (i in 1:length(x)) {
@@ -58,3 +59,50 @@ sum[x[y]]
 x <- c(34, 56, 55, 87, NA, 4, 77, NA, 21, NA, 39)
 length(is.na(x))
 # answer: a.
+
+
+# CHARACTER VECTOR EXERCISES
+# exercise 1
+x <- "Good Morning! "
+nchar(x)
+# answer: b.
+
+
+# exercise 2
+x <- c ("Nature’s", "Best ")
+nchar(x)
+# answer: c.
+
+
+# exercise 3
+x <- c("Nature’s"," At its best ")
+nchar(x)
+# answer: b
+
+
+# exercise 4
+fname <- "James"
+lname <- "Bond"
+paste(fname, lname)
+
+
+# exercise 5
+m <- "Capital of America is Washington"
+substr(m,"1","19")
+
+
+# exercise 6
+string <- "Success i/s not final, failed is not fatal"
+substr(string,23, 30)="failure "
+string
+
+
+# exercise 7
+names <- c("John", "Andrew", "Thomas", "George")
+designation <- c("Manager", "Project Head", "Marketing Head", "Assistant Manager")
+data_frame <- data.frame(
+  "ID" = 1:length(names), # hacky way to get it to work
+  "Names" = names,
+  "Designation" = designation
+)
+data_frame
