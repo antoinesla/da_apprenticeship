@@ -39,7 +39,7 @@ as.integer(digits)
 # exercise 5
 x <- c(1,2,3,4)
 (x+2)[(!is.na(x)) & x > 0] -> k
-k
+kgrey
 # answer: d.
 
 
