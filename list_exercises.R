@@ -53,3 +53,8 @@ x <- list(y=1:10, t="Hello", f="TT", r=5:20)
 length(x[["r"]])
 
 
+# exercise 9 UNFINISHED
+string <- "Grand Opening"
+split_string <- strsplit(string, split = " ")
+string_list <- list(split_string[1], split_string[2])
+print(string_list)
