@@ -13,3 +13,15 @@ levels(music_genre)
 group <- c("Group 1", "Group 2", "Group 3", "Group 4")
 group_factor <- as.factor(group)
 class(group_factor)
+
+# sorting factors
+sizes <- c("m", "xl", "l", "xs", "s", "m", "m", "l", "xs", "xs","s","xl")
+sizesf <- factor(sizes)
+print(levels(sizesf))
+is.ordered(sizesf) # false
+sizes_sorted <- ordered(sizes, levels = c("xs","s","m","l","xl"))
+is.ordered(sizes_sorted)
+print(sizes_sorted)
+levels(sizes_sorted)
+
+table(sizes)
