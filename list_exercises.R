@@ -23,18 +23,33 @@ sum(unlist(a))
 
 # exercise 4
 newlist <- list(a=1:10, b="Good morning", c="Hi")
-for (x in newlist[[1]][]) {
-  newlist[[1]][x] <- newlist[[1]][x] + 1
+for (x in newlist[["a"]][]) {
+  newlist[["a"]][x] <- newlist[["a"]][x] + 1
 
 } 
-print(newlist[1])
+print(newlist["a"])
 
 
 # exercise 5
+b <- list(a=1:10, c="Hello", d="AA")
+print(b[[1]][-2])
+
+
+# exercise 6
 x <- list(a=5:10, c="Hello", d="AA")
 new_list = list(z="NewItem")
 x <- append(x, new_list)
 print(x)
 
 
-# exercise 6
+# exercise 7
+y <- list("a", "b", "c")
+names(y) <- c("one","two","three")
+print(y)
+
+
+# exercise 8
+x <- list(y=1:10, t="Hello", f="TT", r=5:20)
+length(x[["r"]])
+
+
