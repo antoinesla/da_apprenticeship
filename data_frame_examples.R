@@ -15,6 +15,6 @@ data_frame$Training
 # adding rows and columns
 data_frame <- rbind(data_frame,c("Strength", 110, 60))
 print(data_frame)
-Coach <- c("Pete","Steve","Pete","Tanya")
-data_frame <- cbind(data_frame,Coach)
+# Coach <- c("Pete","Steve","Pete","Tanya")
+data_frame <- cbind(data_frame,Coach=c("Pete","Steve","Pete","Tanya"))
 print(data_frame)                    
