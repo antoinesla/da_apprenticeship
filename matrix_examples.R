@@ -27,3 +27,23 @@ print(number_matrix)
 
 # dim function
 dim(number_matrix)
+
+
+# looping through a matrix
+for (rows in 1:nrow(number_matrix)){
+  for (columns in 1:ncol(number_matrix)) {
+    print(paste(rows,columns))
+  }
+}
+
+
+# combining two matrices
+matrix1 <- matrix(c("apple", "banana", "cherry", "grape"), nrow=2, ncol=2)
+print(matrix1)
+matrix2 <- matrix(c("orange", "mango", "pineapple", "watermelon"), nrow=2, ncol=2)
+print(matrix2)
+
+matrix_combined <- rbind(matrix1,matrix2)
+print(matrix_combined)
+matrix_combined <- cbind(matrix1,matrix2)
+print(matrix_combined)
