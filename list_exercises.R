@@ -16,27 +16,25 @@ x[[2]][1] <- "K"
 
 
 # exercise 3
+a <- list ("x"=5, "y"=10, "z"=15)
+sum(unlist(a))
+# answer: c.
 
 
+# exercise 4
+newlist <- list(a=1:10, b="Good morning", c="Hi")
+for (x in newlist[[1]][]) {
+  newlist[[1]][x] <- newlist[[1]][x] + 1
+
+} 
+print(newlist[1])
 
 
-# exercise 1
+# exercise 5
+x <- list(a=5:10, c="Hello", d="AA")
+new_list = list(z="NewItem")
+x <- append(x, new_list)
+print(x)
 
 
-
-# exercise 1
-
-
-
-# exercise 1
-
-
-
-# exercise 1
-
-
-
-# exercise 1
-
-
-
+# exercise 6
